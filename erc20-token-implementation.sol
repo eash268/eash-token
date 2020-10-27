@@ -1,14 +1,14 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// 'FIXED' 'ExtremeSetup Token' token contract
+// 'FIXED' 'Eash Token' token contract
 //
-// Symbol      : EST
-// Name        : ExtremeSetup Token
+// Symbol      : EASH
+// Name        : Eash Token
 // Total supply: 1,000,000.000000000000000000
 // Decimals    : 18
 //
-// Enjoy.
+// You know what it is.
 //
 // (c) BokkyPooBah / Bok Consulting Pty Ltd 2017. The MIT Licence.
 // ----------------------------------------------------------------------------
@@ -98,7 +98,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and an
 // initial fixed supply
 // ----------------------------------------------------------------------------
-contract ExtremeSetupToken is ERC20Interface, Owned {
+contract EashToken is ERC20Interface, Owned {
     using SafeMath for uint;
 
     string public symbol;
@@ -113,9 +113,9 @@ contract ExtremeSetupToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function ExtremeSetupToken() public {
-        symbol = "EST";
-        name = "ExtremeSetup Token";
+    function EashToken() public {
+        symbol = "EASH";
+        name = "Eash Token";
         decimals = 18;
         _totalSupply = 1000000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
